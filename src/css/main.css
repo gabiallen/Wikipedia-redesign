@@ -9,12 +9,14 @@ video {
 ul.header-icons {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding-right: 6rem;
+  padding-top: 1rem;
   overflow: hidden;
 }
 
 li {
   float: left;
+  size: 200%;
 }
 
 .flex {
@@ -28,6 +30,10 @@ header.flex {
 }
 
 .fa-solid {
-  height: 2em;
-  width: 2em;
+  padding: 30px;
+}
+
+.logo {
+  padding-left: 6rem;
+  padding-top: 1rem;
 }
