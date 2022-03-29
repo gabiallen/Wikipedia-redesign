@@ -1,4 +1,4 @@
-/* Decent Defaults */
+/* Defaults */
 
 img,
 video {
@@ -14,9 +14,12 @@ ul.header-icons {
   overflow: hidden;
 }
 
+input.header-search {
+  margin: 1rem;
+}
+
 li {
-  float: left;
-  size: 200%;
+  float: right;
 }
 
 .flex {
@@ -30,10 +33,25 @@ header.flex {
 }
 
 .fa-solid {
-  padding: 30px;
+  padding: 0.75rem;
 }
 
-.logo {
+h1.logo {
   padding-left: 6rem;
   padding-top: 1rem;
 }
+
+/* Mobile only styles */
+
+@media (max-width: 768px) {
+}
+
+/* Desktop Only Styles */
+
+@media (min-width: 48em) {
+  .flex > * {
+    width: 100%;
+  }
+}
+
+/* Desktop only styles */ ;
