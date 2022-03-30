@@ -13,9 +13,7 @@ video {
 }
 
 h1.logo {
-  padding-left: 6rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem 2rem;
 }
 
 form.header-search {
@@ -44,14 +42,18 @@ button.search {
 ul.header-icons {
   list-style-type: none;
   margin: 0;
-  padding-right: 6rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem 2rem;
   overflow: hidden;
 }
 
-li {
+li.header {
   float: right;
+}
+
+.fa-globe,
+.fa-bars,
+.fa-users {
+  padding: 0.75rem;
 }
 
 header.flex {
@@ -60,17 +62,21 @@ header.flex {
   justify-content: space-between;
 }
 
-.fa-solid {
-  padding: 0.75rem;
-}
-
 /* Subject Header */
 
 .subject-header {
   background-color: black;
   text-align: center;
-  min-height: 1vh;
+  min-height: 3rem;
   color: white;
+}
+
+ul.subjects {
+  list-style-type: none;
+}
+
+li.subjects {
+  flex-direction: row;
 }
 
 /* Mobile only styles */
