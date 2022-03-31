@@ -6,27 +6,43 @@ video {
   height: auto;
 }
 
+html {
+  background-color: #faf9f2;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+}
+
 /* header */
 
 .flex {
   display: flex;
 }
 
-header.flex.main {
+.grid {
+  display: grid;
+}
+
+header.grid.main {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  column-width: auto;
 }
 
 h1.logo {
   padding: 1rem 2rem;
+  font-family: "DM Serif Text", serif;
+  font-size: 1.953rem;
+  color: #381d2a;
 }
 
 form.header-search {
   margin: 1rem;
   border-radius: 40px;
-  border-color: black;
-  border: 1px solid;
+  border-color: #381d2a;
+  border: 1.75px solid;
 }
 
 input.search {
@@ -34,11 +50,11 @@ input.search {
   background: transparent;
   margin: 0;
   font-size: 1rem;
-  font-family: sans-serif;
+  font-family: "Raleway", sans-serif;
   color: inherit;
   border: 1px solid transparent;
   border-radius: inherit;
-  padding: 0px 8rem 0px 0px;
+  padding: 0.2rem 8rem 0.2rem 0rem;
 }
 
 button.search {
@@ -50,6 +66,7 @@ ul.header-icons {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  padding-right: 1rem;
   overflow: hidden;
   flex-direction: row;
 }
@@ -60,6 +77,10 @@ li.header {
 
 li.header i {
   padding: 8px;
+}
+
+.fa-globe {
+  color: #ff7733;
 }
 
 /* Subject Header DELETE */
@@ -86,14 +107,28 @@ li.subject {
   text-align: center;
   color: white;
 }
-img.featured-article {
-  height: 50vh;
+img.feature-article {
+  max-width: 100%;
+  max-height: 90vh;
+  overflow: hidden;
 }
 
 .bottom-left {
   position: absolute;
   bottom: 8px;
   left: 16px;
+  text-align: left;
+}
+
+.bottom-left h1 {
+  font-family: "Dela Gothic One", cursive;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.bottom-left h2 {
+  font-family: "DM Serif Text", serif;
+  font-size: 3.815rem;
 }
 
 /* In the News */
