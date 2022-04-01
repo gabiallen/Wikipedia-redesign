@@ -30,6 +30,16 @@ p {
   font-size: 0.8rem;
 }
 
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* header */
 
 .flex {
@@ -102,23 +112,26 @@ li.header i {
 nav {
   position: sticky;
   top: 0;
+  z-index: 1;
   background-color: #faf9f2;
 }
 
-.menu {
+#menu {
   background-color: #4e273a;
-  z-index: 1;
-  position: fixed;
+  margin-top: 2rem;
+  z-index: 2;
   right: 0px;
-  width: 15rem;
-  height: 100vh;
+  position: absolute;
+  max-height: 100vw;
   color: #faf9f2;
-  padding: 8rem 1rem 0;
-  display: none;
+  padding: 8rem 1rem 3rem 4rem;
+  transform: translateX(100%);
+  transition: all 300ms;
 }
 
-div.menu:active {
-  display: contents;
+#menu:active {
+  display: block;
+  transform: translateX(0);
 }
 
 .nav-item.hl {
@@ -130,7 +143,7 @@ div.menu:active {
   float: right;
 }
 
-.menu li.nav-item {
+#menu li.nav-item {
   text-align: right;
   padding-right: 2rem;
 }
@@ -156,7 +169,12 @@ header.hero-desktop {
   line-height: 3.188rem;
   text-align: center;
 }
-
+#showme {
+  background-color: #ff7733;
+  padding: 1rem;
+  margin: 1rem;
+  float: center;
+}
 /* Featured article  */
 
 .bottom-left {
@@ -311,6 +329,8 @@ div.featured-images {
 
 footer {
   background-color: #4e273a;
+  font-family: "Raleway", sans-serif;
+  padding: 3rem;
   color: #faf9f2;
 }
 
@@ -469,6 +489,10 @@ h2.subheading {
   main#desktop-full-article {
     align-content: center;
     margin: 1rem 2rem;
+  }
+
+  img.details-image {
+    margin-left: 1rem !important;
   }
 
   main#desktop-full-article.grid {
