@@ -20,7 +20,7 @@
     <title>Wikipedia Redesign</title>
   </head>
   <body>
-    <nav class="main grid">
+    <header class="main grid">
       <h1 class="logo dm">Wikipedia</h1>
       <form class="header-search">
         <button type="submit" class="search">
@@ -29,11 +29,33 @@
         <input type="search" class="search" placeholder="Search Wikipedia" />
       </form>
       <ul class="header-icons">
-        <li class="header"><i class="fa-solid fa-bars fa-lg"></i></li>
-        <li class="header"><i class="fa-solid fa-user fa-lg"></i></li>
-        <li class="header"><i class="fa-solid fa-globe fa-lg"></i></li>
+        <li class="header">
+          <a href="#menu" class="toggle menu" aria-role="button">
+            <i class="fa-solid fa-bars fa-lg"></i>
+          </a>
+        </li>
+        <li class="header">
+          <a href="#" aria-role="button">
+            <i class="fa-solid fa-user fa-lg"></i>
+          </a>
+        </li>
+        <li class="header">
+          <a href="#" aria-role="button">
+            <i class="fa-solid fa-globe fa-lg"></i>
+          </a>
+        </li>
       </ul>
-    </nav>
+    </header>
+    <nav id="menu">
+      <a href="#" class="toggle-menu" aria-role="button"><i class="fa fa-times"></i></a>
+      <ul>
+        <li><a href="#" class="lnk-menu">Talk</a></li>
+        <li><a href="#" class="lnk-menu">About</a></li>
+        <li><a href="#" class="lnk-menu">Contact Us</a></li>
+        <li><a href="#" class="lnk-menu">Donate</a></li>
+        <li><a href="#" class="lnk-menu">Contributions</a></li>
+      </ul>
+    
     <header class="hero">
       <div class="bottom-left">
         <h1 class="gothic">Featured Article</h1>
