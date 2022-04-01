@@ -41,7 +41,7 @@ p {
   gap: 0.625rem;
 }
 
-header.grid.main {
+nav.grid.main {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -98,6 +98,12 @@ li.header i {
 .fa-globe,
 .fa-magnifying-glass {
   color: #ff7733;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #faf9f2;
 }
 
 /* Hero */
