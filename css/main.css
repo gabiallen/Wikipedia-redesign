@@ -340,6 +340,10 @@ footer h1 {
 
 /* Article page */
 
+.mobile-article-title {
+  margin-top: 1rem !important;
+}
+
 img.details-image {
   width: 19.625rem;
   height: 23.125rem;
@@ -493,6 +497,22 @@ h2.subheading {
 
   img.details-image {
     margin-left: 1rem !important;
+  }
+
+  table {
+    margin-left: 2rem;
+  }
+
+  img.img-1 {
+    margin-left: 1rem;
+  }
+
+  .img-2-h4 {
+    padding-bottom: 3rem;
+  }
+
+  img.img-2 {
+    margin-left: 1rem;
   }
 
   main#desktop-full-article.grid {
