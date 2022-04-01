@@ -20,6 +20,7 @@ p {
   font-family: "Dela Gothic One", cursive;
   font-size: 1.1875rem;
   line-height: 1.5rem;
+  font-weight: normal !important;
 }
 
 .dm {
@@ -203,7 +204,7 @@ img.news-img {
   margin-bottom: 0.875rem;
 }
 
-.vl {
+.news-vl {
   border-left: 1.5px solid;
   border-color: #4e273a;
   height: 14rem;
@@ -314,8 +315,86 @@ div.featured-images {
 
 /* Article page */
 
+main#full-article {
+  margin-top: 5.5rem;
+}
+
+img.details-image {
+  width: 19.625rem;
+  height: 23.125rem;
+  overflow: hidden;
+  object-fit: cover;
+  margin-bottom: 0.4rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+h4.caption {
+  text-align: center;
+  margin-bottom: 1.625rem;
+}
+
+table {
+  margin-left: 4.5rem;
+  border-left: 1.5px solid;
+  border-color: #4e273a;
+  text-align: left;
+}
+th {
+  font-family: "Dela Gothic One", cursive;
+  font-weight: normal !important;
+  font-size: 0.8rem;
+  padding-left: 0.625rem;
+}
+
+td {
+  font-family: "Raleway", sans-serif;
+  color: #3e6990;
+  font-size: 0.8rem;
+  padding-left: 2rem;
+  max-width: 9rem;
+  word-wrap: normal;
+}
+
+img.img-1 {
+  width: 19.625rem;
+  height: 10.713rem;
+  overflow: hidden;
+  object-fit: cover;
+  margin-top: 7.688rem;
+  margin-bottom: 0.4rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+img.img-2 {
+  width: 19.625rem;
+  height: 39.5rem;
+  overflow: hidden;
+  object-fit: cover;
+  margin-bottom: 0.4rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
 h1.article-title {
   font-size: 3.815rem;
+}
+
+#article-text p {
+  max-width: 37.375rem;
+}
+
+div.article-hl {
+  border-top: 1.5px solid;
+  border-color: #4e273a;
+  width: 15.375rem;
+  margin-top: 1.3rem;
+}
+
+.contents-vl {
+  border-left: 1.5px solid;
+  border-color: #4e273a;
+  height: 14rem;
 }
 
 /* Mobile only styles */
