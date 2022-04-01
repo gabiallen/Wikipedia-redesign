@@ -21,10 +21,10 @@
   </head>
   <body>
     <header class="main grid">
-      <h1 class="logo">Wikipedia</h1>
+      <h1 class="logo dm">Wikipedia</h1>
       <form class="header-search">
         <button type="submit" class="search">
-          <i class="fa-light fa-magnifying-glass fa-large"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
         </button>
         <input type="search" class="search" placeholder="Search Wikipedia" />
       </form>
@@ -34,23 +34,21 @@
         <li class="header"><i class="fa-solid fa-globe fa-lg"></i></li>
       </ul>
     </header>
-    <article class="container">
-      <div></div>
-      <img
-        class="feature-article"
-        src="./Images/Dune.jpg"
-        alt="Screengrab from Dune film"
-        height="1800px"
-        width="1800px"
-      />
+    <header class="hero">
       <div class="bottom-left">
-        <h1>Featured Article</h1>
-        <h2>Dune (2021 film)</h2>
+        <h1 class="gothic">Featured Article</h1>
+        <h2 class="dm">Dune (2021 film)</h2>
+      </div>
+    </header>
+    <article class="container">
+      <div class="bottom-left">
+        <h1 class="gothic">Featured Article</h1>
+        <h2 class="dm">Dune (2021 film)</h2>
       </div>
     </article>
     <div class="body">
       <article class="body-1">
-        <h1 class="subheading">In the news</h2>
+        <h1 class="subheading">In the news</h1>
         <div class="flex news">
           <card>
             <img
@@ -58,21 +56,117 @@
               src="./Images/Earendel.jpg"
               alt="The star Earendel among constellations"
             />
-            <h2 class="article-description">Earendel, the farthest 
-              known star, is discovered.</h2>
+            <h2 class="gothic article-description">
+              Earendel, the farthest known star, is discovered.
+            </h2>
           </card>
           <div class="vl"></div>
           <card>
-            <img class="news-img" src="./Images/Coda.jpeg" alt="Cast of the film CODA at the oscars" />
-            <h2 class="article-description">CODA wins Best Picture 
-              at the Academy Awards.</h2>
+            <img
+              class="news-img"
+              src="./Images/Coda.jpeg"
+              alt="Cast of the film CODA at the oscars"
+            />
+            <h2 class="gothic article-description">
+              CODA wins Best Picture at the Academy Awards.
+            </h2>
           </card>
           <div class="vl"></div>
           <card>
-            <img class="news-img" src="./Images/Abela.jpg" alt="Portrait of Robert Abela" width="1200px" height="675px" />
-            <h2 class="article-description">Labour Party wins most 
-              seats in Maltese election.</h2>
+            <img
+              class="news-img"
+              src="./Images/Abela.jpg"
+              alt="Portrait of Robert Abela"
+              width="1200px"
+              height="675px"
+            />
+            <h2 class="gothic article-description">
+              Labour Party wins most seats in Maltese election.
+            </h2>
           </card>
+        </div>
+      </article>
+      <article class="body-2">
+        <h1 class="subheading">On this day</h1>
+        <div class="grid">
+          <card class="day-event">
+            <h2 class="gothic h4">1867</h2>
+            <h3 class="gothic">
+              Alaska is purchased from Russia for $7.2 million.
+            </h3>
+            <div class="hl"></div>
+          </card>
+          <card class="day-event">
+            <h2 class="gothic h4">1870</h2>
+            <h3 class="gothic">
+              Texas is readmitted to the US following Reconstruction.
+            </h3>
+            <div class="hl"></div>
+          </card>
+          <card class="day-event">
+            <h2 class="gothic h4">1853</h2>
+            <h3 class="gothic">
+              Vincent Van Gogh, Dutch- French painter, is born.
+            </h3>
+            <div class="hl"></div>
+          </card>
+          <card class="day-event">
+            <h2 class="gothic h4">1945</h2>
+            <h3 class="gothic">WWII: Soviet forces invade Austria.</h3>
+            <div class="hl"></div>
+          </card>
+          <card class="day-event">
+            <h2 class="gothic h4">1867</h2>
+            <h3 class="gothic">
+              Alaska is purchased from Russia for $7.2 million.
+            </h3>
+            <div class="hl"></div>
+          </card>
+          <card class="day-event">
+            <h2 class="gothic h4">1968</h2>
+            <h3 class="gothic">Celine Dion, Canadian singer, is born.</h3>
+            <div class="hl"></div>
+          </card>
+          <card class="day-event">
+            <h2 class="gothic h4">1990</h2>
+            <h3 class="gothic">Thomas Rhett, country music singer, is born.</h3>
+            <div class="hl"></div>
+          </card>
+          <card class="day-event">
+            <h2 class="gothic h4">2002</h2>
+            <h3 class="gothic">Queen Elizabeth The Queen Mother dies.</h3>
+            <div class="hl"></div>
+          </card>
+          <card class="day-event">
+            <h2 class="gothic h4">2020</h2>
+            <h3 class="gothic">Bill Withers, American singer, dies.</h3>
+            <div class="hl"></div>
+          </card>
+        </div>
+      </article>
+      <article class="body-3">
+        <h1 class="subheading">Featured Images</h1>
+        <div class="featured-images grid">
+          <img
+            src="./Images/Heart_Nebula.jpg"
+            alt="Orange and blue heart nebula"
+            class="square"
+          />
+          <img
+            src="./Images/O'Neil.jpg"
+            alt="Illustration of children surrounding Santa Claus"
+            class="square"
+          />
+          <img
+            src="./Images/MigrantMother.jpg"
+            alt="Black and white image of mother and children"
+            id="tall"
+          />
+          <img
+            src="./Images/Gowanus_New_York_October.jpg"
+            alt="Panorama of canal in front of New York skyline"
+            id="long"
+          />
         </div>
       </article>
     </div>
