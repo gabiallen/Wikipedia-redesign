@@ -50,8 +50,10 @@ form.search {
   border: 1.75px solid;
 }
 
-form.mobile-search {
-  margin: 3rem;
+form.hero-search {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  justify-content: center;
 }
 
 input.search {
@@ -170,8 +172,8 @@ header.hero-desktop {
 
 /* Body */
 
-div.flex.news {
-  justify-content: space-between;
+div.grid.news {
+  column-gap: 5.2rem;
 }
 
 div.body {
@@ -202,6 +204,7 @@ img.news-img {
   border-left: 1.5px solid;
   border-color: #4e273a;
   height: 14rem;
+  width: 1.5px !important;
 }
 
 card div.hl {
