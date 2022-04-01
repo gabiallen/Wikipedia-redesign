@@ -165,13 +165,14 @@ header.hero {
   color: #faf9f2;
 }
 
-.bottom-left h1 {
+.bottom-left h2 {
   font-size: 0.8rem;
   text-transform: uppercase;
 }
 
-.bottom-left h2 {
+.bottom-left h1 {
   font-size: 3.815rem;
+  font-weight: normal !important;
 }
 
 /* Body */
@@ -184,14 +185,14 @@ div.body {
   margin: 7.5rem 8rem;
 }
 
-h1.subheading {
+h2.subheading {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-size: 1.563rem;
   margin-bottom: 3rem;
 }
 
-h2.article-description {
+h3.article-description {
   max-width: 22rem;
   word-wrap: normal;
 }
@@ -228,7 +229,7 @@ card div.hl {
   column-gap: 5.2rem;
 }
 
-.body-2 h2 {
+.body-2 h4 {
   color: #ff7733;
 }
 
@@ -389,6 +390,14 @@ div.article-hl {
   border-color: #4e273a;
   width: 15.375rem;
   margin-top: 1.3rem;
+}
+
+#plot {
+  margin-top: 3.5rem;
+}
+
+h2.subheading {
+  margin-bottom: 1rem;
 }
 
 .contents-vl {
