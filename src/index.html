@@ -20,7 +20,7 @@
     <title>Wikipedia Redesign</title>
   </head>
   <body>
-    <header class="main grid">
+    <nav class="main grid">
       <h1 class="logo dm">Wikipedia</h1>
       <form class="header-search">
         <button type="submit" class="search">
@@ -30,7 +30,7 @@
       </form>
       <ul class="header-icons">
         <li class="header">
-          <a href="#menu" class="toggle menu" aria-role="button">
+          <a href="#" class="">
             <i class="fa-solid fa-bars fa-lg"></i>
           </a>
         </li>
@@ -45,17 +45,32 @@
           </a>
         </li>
       </ul>
-    </header>
-    <nav id="menu">
-      <a href="#" class="toggle-menu" aria-role="button"><i class="fa fa-times"></i></a>
-      <ul>
-        <li><a href="#" class="lnk-menu">Talk</a></li>
-        <li><a href="#" class="lnk-menu">About</a></li>
-        <li><a href="#" class="lnk-menu">Contact Us</a></li>
-        <li><a href="#" class="lnk-menu">Donate</a></li>
-        <li><a href="#" class="lnk-menu">Contributions</a></li>
-      </ul>
-    
+      <div class="menu">
+        <a href="#"><i class="fa-solid fa-xmark fa-2x"></i></a>
+        <ul class="h4 gothic">
+          <li class="nav-item">
+            <a href="#"></a>Talk
+            <div class="hl nav-item"></div>
+          </li>
+          <li class="nav-item">
+            <a href="#"></a>Contributions
+            <div class="hl nav-item"></div>
+          </li>
+          <li class="nav-item">
+            <a href="#"></a>About
+            <div class="hl nav-item"></div>
+          </li>
+          <li class="nav-item">
+            <a href="#"></a>Contact Us
+            <div class="hl nav-item"></div>
+          </li>
+          <li class="nav-item">
+            <a href="#"></a>Donate
+            <div class="hl nav-item"></div>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <header class="hero">
       <div class="bottom-left">
         <h1 class="gothic">Featured Article</h1>
