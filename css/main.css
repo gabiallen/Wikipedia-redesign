@@ -9,6 +9,7 @@ video {
 html {
   background-color: #faf9f2;
   color: #4e273a;
+  max-width: 1920;
 }
 
 p {
@@ -41,7 +42,7 @@ p {
   gap: 0.625rem;
 }
 
-header.grid.main {
+nav.grid.main {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -100,77 +101,47 @@ li.header i {
   color: #ff7733;
 }
 
-header {
+nav {
   position: sticky;
   top: 0;
   background-color: #faf9f2;
 }
 
-@mixin transform($value) {
-  -webkit-transform: translate3d(0, 0, 0) $value;
-  -moz-transform: translate3d(0, 0, 0) $value;
-  -ms-transform: translate3d(0, 0, 0) $value;
-  transform: translate3d(0, 0, 0) $value;
-}
-
-@mixin transition($value) {
-  -webkit-transition: $value;
-  -moz-transition: $value;
-  -ms-transition: $value;
-  transition: $value;
-}
-
-.toggle-menu {
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-  text-align: center;
-  overflow: hidden;
-  cursor: pointer;
+.menu {
+  background-color: #4e273a;
+  z-index: 1;
   position: fixed;
-  z-index: 2;
-  left: 10px;
-  top: 10px;
-}
-
-#menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  width: 220px;
-  height: 100%;
-  padding-top: 60px;
-  background: #4e273a;
-  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2) inset;
-  .toggle-menu {
-    z-index: 3;
-  }
-}
-
-.lnk-menu {
-  display: block;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  margin: 0 10px;
-  padding: 10px;
+  right: 0px;
+  width: 15rem;
+  height: 100vh;
   color: #faf9f2;
-  text-decoration: none;
-  &:hover {
-    color: #399;
-  }
+  padding: 8rem 1rem 0;
+  display: none;
 }
 
-#menu {
-  @include transform(translateX(-220px));
-  @include transition(all 0.25s cubic-bezier(0.16, 0.63, 0.45, 0.98));
+div.menu:active {
+  display: contents;
 }
 
-#menu:target {
-  @include transform(translateX(0));
+.nav-item.hl {
+  border-color: #faf9f2;
+  width: 11rem;
+  border-top: 1.5px solid;
+  margin-bottom: 1.3rem;
+  margin-top: 0.4rem;
+  float: right;
 }
 
+.menu li.nav-item {
+  text-align: right;
+  padding-right: 2rem;
+}
+
+.fa-xmark {
+  color: #faf9f2;
+  float: right;
+  margin: 1rem 2rem;
+}
 /* Hero */
 
 header.hero {
@@ -238,7 +209,7 @@ img.news-img {
   height: 14rem;
 }
 
-.hl {
+card div.hl {
   border-top: 1.5px solid;
   border-color: #4e273a;
   width: 22rem;
@@ -340,6 +311,12 @@ div.featured-images {
 }
 
 /* Footer */
+
+/* Article page */
+
+h1.article-title {
+  font-size: 3.815rem;
+}
 
 /* Mobile only styles */
 
