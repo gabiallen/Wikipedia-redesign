@@ -9,7 +9,6 @@ video {
 html {
   background-color: #faf9f2;
   color: #4e273a;
-  max-width: 1920;
 }
 
 p {
@@ -37,30 +36,22 @@ p {
   display: flex;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.625rem;
-}
-
 nav.grid.main {
-  flex-direction: row;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-content: space-between;
   column-width: auto;
 }
 
-h1.logo {
-  padding: 1rem 2rem;
-  font-size: 1.953rem;
-  color: #4e273a;
-}
-
-form.header-search {
+form.search {
   margin: 1rem;
   border-radius: 40px;
   border-color: #4e273a;
   border: 1.75px solid;
+}
+
+form.mobile-search {
+  margin: 3rem;
 }
 
 input.search {
@@ -72,7 +63,6 @@ input.search {
   color: inherit;
   border: 1px solid transparent;
   border-radius: inherit;
-  padding: 0.2rem 8rem 0.2rem 0rem;
 }
 
 button.search {
@@ -145,7 +135,7 @@ div.menu:active {
 }
 /* Hero */
 
-header.hero {
+header.hero-desktop {
   min-height: 91vh;
   background-image: linear-gradient(transparent 50%, black),
     url("../Images/Dune.jpg");
@@ -153,15 +143,18 @@ header.hero {
   background-size: cover;
 }
 
+.hero-mobile h1 {
+  margin-top: 16rem;
+  font-size: 3.052rem;
+  line-height: 3.188rem;
+  text-align: center;
+}
+
 /* Featured article  */
 
 .bottom-left {
   position: absolute;
-  bottom: 8px;
-  left: 16px;
   text-align: left;
-  margin-bottom: 2.5rem;
-  margin-left: 2.5rem;
   color: #faf9f2;
 }
 
@@ -316,7 +309,7 @@ div.featured-images {
 
 /* Article page */
 
-main#full-article {
+main#desktop-full-article {
   margin-top: 5.5rem;
 }
 
@@ -385,6 +378,10 @@ h1.article-title {
   max-width: 37.375rem;
 }
 
+div.spacer {
+  min-height: 1rem;
+}
+
 div.article-hl {
   border-top: 1.5px solid;
   border-color: #4e273a;
@@ -409,8 +406,71 @@ h2.subheading {
 /* Mobile only styles */
 
 @media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  body {
+    align-items: center;
+  }
+
+  html {
+    width: 100%;
+  }
+
+  .grid.mobnav {
+    display: flex;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.625rem;
+  }
+
+  h1.logo {
+    padding: 1rem 2rem;
+    font-size: 1.953rem;
+    color: #4e273a;
+  }
+
+  input.search {
+    padding: 0.2rem 2rem 0.2rem 0rem;
+  }
+  .invisible-mobile {
+    display: none;
+  }
 }
 
 /* Desktop Only Styles */
+@media (min-width: 48em) {
+  .flex > * {
+    width: 100%;
+  }
 
-/* Desktop only styles */ ;
+  html {
+    max-width: 1920;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.625rem;
+  }
+
+  h1.logo {
+    padding: 1rem 2rem;
+    font-size: 1.953rem;
+    color: #4e273a;
+  }
+
+  .invisible-desktop {
+    display: none;
+  }
+
+  input.search {
+    padding: 0.2rem 8rem 0.2rem 0rem;
+  }
+  .bottom-left {
+    bottom: 8px;
+    left: 16px;
+    margin-bottom: 2.5rem;
+    margin-left: 2.5rem;
+  }
+}
