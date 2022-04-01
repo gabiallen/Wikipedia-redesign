@@ -20,9 +20,10 @@
     <title>Wikipedia Redesign</title>
   </head>
   <body>
-    <nav class="main grid">
-      <h1 class="logo dm">Wikipedia</h1>
-      <form class="header-search">
+    <nav class="main grid mobnav">
+      <h1 class="logo dm invisible-mobile">Wikipedia</h1>
+      <h1 class="logo dm invisible-desktop">Wiki</h1>
+      <form class="header-search search invisible-mobile">
         <button type="submit" class="search">
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
@@ -34,7 +35,7 @@
             <i class="fa-solid fa-bars fa-lg"></i>
           </a>
         </li>
-        <li class="header">
+        <li class="header invisible-mobile">
           <a href="#" aria-role="button">
             <i class="fa-solid fa-user fa-lg"></i>
           </a>
@@ -71,11 +72,24 @@
         </ul>
       </div>
     </nav>
-    <header class="hero">
+    <header class="hero-desktop invisible-mobile">
       <div class="bottom-left">
         <h2 class="gothic">Featured Article</h2>
         <h1 class="dm">Dune (2021 film)</h1>
       </div>
+    </header>
+    <header class="hero-mobile">
+      <h1>Welcome to Wikipedia.</h1>
+      <form class="hero-search invisible-desktop search">
+        <button type="submit" class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <input
+          type="search"
+          class="search hero"
+          placeholder="Search Wikipedia"
+        />
+      </form>
     </header>
     <div class="body">
       <article class="body-1">
