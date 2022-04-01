@@ -20,7 +20,64 @@
     <title>Wikipedia Article Redesign</title>
   </head>
   <body>
-    <main class="flex" id="desktop-full-article">
+    <nav class="main grid mobnav">
+        <h1 class="logo dm invisible-mobile">Wikipedia</h1>
+        <h1 class="logo dm invisible-desktop">Wiki</h1>
+        <form class="header-search search invisible-mobile">
+          <button type="submit" class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <input type="search" class="search" placeholder="Search Wikipedia" />
+        </form>
+        <ul class="header-icons">
+          <li class="header">
+            <a href="#" class="">
+              <i class="fa-solid fa-bars fa-lg"></i>
+            </a>
+          </li>
+          <li class="header invisible-mobile">
+            <a href="#" aria-role="button">
+              <i class="fa-solid fa-user fa-lg"></i>
+            </a>
+          </li>
+          <li class="header">
+            <a href="#" aria-role="button">
+              <i class="fa-solid fa-globe fa-lg"></i>
+            </a>
+          </li>
+          <li class="header invisible-desktop">
+            <a href="#" aria-role="button">
+              <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+            </a>
+          </li>
+        </ul>
+        <div class="menu">
+          <a href="#"><i class="fa-solid fa-xmark fa-2x"></i></a>
+          <ul class="h4 gothic">
+            <li class="nav-item">
+              <a href="#"></a>Home
+              <div class="hl nav-item"></div>
+            </li>
+            <li class="nav-item">
+              <a href="#"></a>Talk
+              <div class="hl nav-item"></div>
+            </li>
+            <li class="nav-item">
+              <a href="#"></a>About
+              <div class="hl nav-item"></div>
+            </li>
+            <li class="nav-item">
+              <a href="#"></a>Contact Us
+              <div class="hl nav-item"></div>
+            </li>
+            <li class="nav-item">
+              <a href="#"></a>Donate
+              <div class="hl nav-item"></div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <main class="grid" id="desktop-full-article">
       <div id="article-details">
         <article class="img-caption">
           <img
@@ -156,6 +213,7 @@
                 place from March to July 2019 at locations including Budapest, Jordan,
                 Norway, and Abu Dhabi.</p>
             <div class="article-hl"></div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8g18jFHCLXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
         <section id="plot">
             <h2 class="subheading">Plot</h2>
@@ -164,6 +222,28 @@
             <div class="spacer"></div>
             <p>Leto’s concubine Lady Jessica is an acolyte of the Bene Gesserit, a secretive sisterhood whose members possess advanced physical and mental abilities. As part of their centuries-long breeding program, the Bene Gesserit instructed Jessica to bear a daughter whose son would become a male Bene Gesserit called the Kwisatz Haderach, a messianic being with the clairvoyance necessary to guide humanity to a better future; instead, she bore a son, Paul. Throughout his life, Paul is trained by Leto’s aides, Duncan Idaho, Gurney Halleck, Suk doctor Wellington Yueh and the Mentat Thufir Hawat, while Jessica trains Paul in Bene Gesserit disciplines. Paul confides in Jessica and Duncan that he is troubled by visions of the future. In response, the Reverend Mother Gaius Helen Mohiam visits Caladan and subjects Paul to a test to assess his impulse control, which he passes. Mohiam instructs House patriarch Baron Vladimir Harkonnen to spare Paul and Jessica during his coup, to which he duplicitously agrees.</p>
             <div class="article-hl"></div>
+        </section>
+        <section id="references">
+            <div class="dropdown">
+                <p class="gothic">References <a href="#dropdown"><i class="fa-solid fa-angle-down"></i></a></p>
+                <ol id="dropdown"> 
+                    <li>"Dune (12A)". British Board of Film Classification. Archived from the original on October 21, 2021. Retrieved October 21, 2021.</li>
+                    <li> Fleming, Mike Jr.; Bart, Peter (December 7, 2020). "Bart & Fleming: While WGA, CAA & WME Fight In Court, Streamers Rewrite Movie Paydays; Will Legendary Challenge WarnerMedia Over 'Dune' & Godzilla Vs. Kong' HBO Max Move?". Deadline Hollywood. Archived from the original on December 7, 2020. Retrieved December 7, 2020.</li>
+                    <li> "Dune". Box Office Mojo. IMDb. Retrieved March 30, 2022.</li>
+                    <li> "Dune". The Numbers. Nash Information Services, LLC. Retrieved March 25, 2022.</li>
+                    <a href="#"><i class="fa-solid fa-angle-up fa-lg"></i></a>
+                </ol>
+            </div>
+            <div class="dropdown">
+                <p class="gothic">Sources <a href="#dropdown-2"><i class="fa-solid fa-angle-down"></i></a></p>
+                <ol id="dropdown-2"> 
+                    <li>https://www.dunemovie.net/</li>
+                    <li> https://www.imdb.com/title/tt1160419/</li>
+                    <li> https://deadline.com/wp-content/uploads/2022/01/Dune-Read-The-Screenplay.pdf</li>
+                    <a href="#"><i class="fa-solid fa-angle-up fa-lg"></i></a>
+                </ol>
+            </div>
+            
         </section>
       </div>
     </main>
