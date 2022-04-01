@@ -37,7 +37,7 @@ p {
 }
 
 nav.grid.main {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 0.5fr 2fr 0.5fr;
   align-items: center;
   justify-content: space-between;
   column-width: auto;
@@ -79,6 +79,11 @@ ul.header-icons {
   padding-right: 1rem;
   overflow: hidden;
   flex-direction: row;
+  color: #4e273a;
+}
+
+ul.header-icons:active {
+  color: #4e273a;
 }
 
 li.header {
@@ -174,10 +179,6 @@ header.hero-desktop {
 
 div.grid.news {
   column-gap: 5.2rem;
-}
-
-div.body {
-  margin: 7.5rem 8rem;
 }
 
 h2.subheading {
@@ -319,12 +320,12 @@ main#desktop-full-article {
 img.details-image {
   width: 19.625rem;
   height: 23.125rem;
-  overflow: hidden;
   object-fit: cover;
   margin-bottom: 0.4rem;
   margin-left: 4rem;
   margin-right: 4rem;
 }
+
 h4.caption {
   text-align: center;
   margin-bottom: 1.625rem;
@@ -373,14 +374,6 @@ img.img-2 {
   margin-right: 4rem;
 }
 
-h1.article-title {
-  font-size: 3.815rem;
-}
-
-#article-text p {
-  max-width: 37.375rem;
-}
-
 div.spacer {
   min-height: 1rem;
 }
@@ -413,12 +406,15 @@ h2.subheading {
     flex-direction: column;
   }
 
-  body {
-    align-items: center;
-  }
-
   html {
     width: 100%;
+  }
+
+  div.body,
+  header,
+  main#desktop-full-article {
+    align-content: center;
+    margin: 1rem 2rem;
   }
 
   .grid.mobnav {
@@ -439,12 +435,44 @@ h2.subheading {
   .invisible-mobile {
     display: none;
   }
+
+  .body-1 {
+    margin-top: 55vh;
+  }
+
+  .news card h3 {
+    margin-bottom: 3rem;
+  }
+
+  .day-event h4 {
+    margin-top: 2rem;
+  }
+
+  .feat-img {
+    margin-bottom: 3rem;
+  }
+
+  h1.article-title {
+    font-size: 3.052rem;
+  }
+
+  #article-text p {
+    max-width: 37.375rem;
+  }
+}
+
+/* Tablet styles */
+@media screen {
 }
 
 /* Desktop Only Styles */
 @media (min-width: 48em) {
   .flex > * {
     width: 100%;
+  }
+
+  div.body {
+    margin: 7.5rem 8rem;
   }
 
   html {
@@ -475,5 +503,13 @@ h2.subheading {
     left: 16px;
     margin-bottom: 2.5rem;
     margin-left: 2.5rem;
+  }
+
+  h1.article-title {
+    font-size: 3.815rem;
+  }
+
+  #article-text p {
+    max-width: 37.375rem;
   }
 }
