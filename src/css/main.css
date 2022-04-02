@@ -566,8 +566,8 @@ h2.subheading {
     max-width: 37.375rem;
   }
 
-  .contact-text {
-    padding-bottom: 40rem;
+  p.contact-text {
+    padding-bottom: 25rem;
   }
 
   iframe {
