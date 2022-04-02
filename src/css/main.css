@@ -6,6 +6,10 @@ video {
   height: auto;
 }
 
+#contact {
+  margin-left: 20rem;
+  margin-top: 4rem;
+}
 html {
   background-color: #faf9f2;
   color: #4e273a;
@@ -448,9 +452,6 @@ h2.subheading {
   display: block;
 }
 
-.dropdown {
-}
-
 .dropdown p {
   background-color: #4e273a;
   margin-top: 0.5rem;
@@ -490,7 +491,8 @@ h2.subheading {
 
   div.body,
   header,
-  main#desktop-full-article {
+  main#desktop-full-article,
+  #contact {
     align-content: center;
     margin: 1rem 2rem;
   }
@@ -559,8 +561,13 @@ h2.subheading {
     margin-bottom: ;
   }
 
-  #article-text p {
+  #article-text p,
+  #article-text li {
     max-width: 37.375rem;
+  }
+
+  .contact-text {
+    padding-bottom: 40rem;
   }
 
   iframe {
